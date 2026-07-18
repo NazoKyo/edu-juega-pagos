@@ -1,27 +1,46 @@
-async function copiarTexto(idElemento, idBoton) {
+async function copiarTexto(idTexto, idBoton){
 
-    const texto = document.getElementById(idElemento).innerText;
+    const texto = document
+        .getElementById(idTexto)
+        .innerText;
 
-    await navigator.clipboard.writeText(texto);
+    try{
 
-    const boton = document.getElementById(idBoton);
+        await navigator.clipboard.writeText(texto);
 
-    const textoOriginal = boton.innerHTML;
+        const boton =
+            document.getElementById(idBoton);
 
-    boton.innerHTML = "✔ Copiado";
+        boton.innerHTML="✔ Copiado";
 
-    setTimeout(() => {
+        setTimeout(()=>{
 
-        boton.innerHTML = textoOriginal;
+            boton.innerHTML="📋 Copiar";
 
-    }, 2000);
+        },2000);
+
+    }
+
+    catch(error){
+
+        alert("No fue posible copiar.");
+
+    }
 
 }
 
-document.getElementById("btnCuenta").addEventListener("click", () => {
-    copiarTexto("cuenta", "btnCuenta");
+document
+.getElementById("btnCuenta")
+.addEventListener("click",()=>{
+
+    copiarTexto("cuenta","btnCuenta");
+
 });
 
-document.getElementById("btnClabe").addEventListener("click", () => {
-    copiarTexto("clabe", "btnClabe");
+document
+.getElementById("btnClabe")
+.addEventListener("click",()=>{
+
+    copiarTexto("clabe","btnClabe");
+
 });
