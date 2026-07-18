@@ -1,9 +1,8 @@
 async function copiarTexto(idTexto, idBoton){
 
-    const texto = document
-        .getElementById(idTexto)
-        .innerText;
+    const elemento = document.getElementById(idTexto);
 
+    const texto = elemento.dataset.copy;
     try{
 
         await navigator.clipboard.writeText(texto);
