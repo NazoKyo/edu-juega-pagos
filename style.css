@@ -1,1 +1,250 @@
+/* ==============================
+   ESTILOS GENERALES
+============================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Nunito',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #dff6ff,
+        #e8f9f1,
+        #f7e8ff
+    );
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* ==============================
+   TARJETA PRINCIPAL
+============================== */
+
+.contenedor{
+
+    width:100%;
+    max-width:700px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.12);
+
+}
+
+/* ==============================
+   ENCABEZADO
+============================== */
+
+.encabezado{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.logo{
+
+    width:170px;
+
+    margin-bottom:20px;
+
+}
+
+.encabezado h1{
+
+    color:#4d7cfe;
+
+    font-size:38px;
+
+    font-weight:800;
+
+}
+
+.encabezado p{
+
+    color:#666;
+
+    font-size:20px;
+
+    margin-top:5px;
+
+}
+
+.encabezado span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#888;
+
+}
+
+/* ==============================
+   TARJETAS
+============================== */
+
+.tarjeta{
+
+    background:#fdfdfd;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border:1px solid #eeeeee;
+
+}
+
+.tarjeta h2{
+
+    color:#4d7cfe;
+
+    margin-bottom:18px;
+
+}
+
+.info{
+
+    margin-bottom:15px;
+
+}
+
+.info label{
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+.info p{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+/* ==============================
+   BOTONES COPIAR
+============================== */
+
+.copiar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.copiar span{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 22px;
+
+    font-size:17px;
+
+    background:#4d7cfe;
+
+    color:white;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    background:#355fe0;
+
+}
+
+/* ==============================
+   MENSAJE
+============================== */
+
+.mensaje{
+
+    margin-top:20px;
+
+    background:#fff7df;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==============================
+   WHATSAPP
+============================== */
+
+.whatsapp{
+
+    margin-top:25px;
+
+    width:100%;
+
+    background:#25D366;
+
+    font-size:18px;
+
+}
+
+.whatsapp:hover{
+
+    background:#18b957;
+
+}
